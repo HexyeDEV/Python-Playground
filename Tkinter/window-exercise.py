@@ -23,8 +23,7 @@ class Program:
             icon_path = self.icon_alt
 
         # Show text
-        text = Label(window, text=icon_path)
-        text.pack()
+        Label(window, text=icon_path).pack()
 
         # Window icon
         window.iconbitmap(icon_path)
@@ -42,8 +41,7 @@ class Program:
             window.resizable(0, 0)
 
     def addText(self, text):
-        text = Label(self.window, text=text)
-        text.pack()
+        Label(self.window, text=text).pack()
 
     def showWindow(self):
         # Show window
